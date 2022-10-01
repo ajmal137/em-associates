@@ -14944,7 +14944,7 @@ nav ul li a:hover {
   align-items: center;
   background-size: cover;
   -ms-background-size: cover;
-  background-image: var(--banner), url(../images/office.jpg);
+  background-image: var(--banner), url(../images/banner1.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -17313,6 +17313,53 @@ button.owl-next {
   .w3l-footers-14 .copyright {
     margin-top: 30px;
   }
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+
+    .modal-content {
+      padding: 1rem;
+    }
+  }
+}
+
+.modal-header {
+  .close {
+    margin-top: -1.5rem;
+  }
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons {
+  .btn {
+    margin: 0 0.5rem 1rem;
+  }
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+login {
+  margin-top: 5;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style-freedom.css.map */

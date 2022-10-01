@@ -16,6 +16,9 @@ Author URL: http://w3layouts.com
   <link href="//fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -103,6 +106,14 @@ Author URL: http://w3layouts.com
   <!--//breadcrumb-bg-->
   <!-- contacts -->
   <!-- contact-form 2 -->
+
+  <!-- <div class="container">
+    <h4>User Login</h4>
+    <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+      Login
+    </button>
+  </div> -->
+
   <section class="w3l-contact-2 py-5" id="contact">
     <div class="container py-lg-4 py-md-3 py-2">
       <div class="title-content text-left">
@@ -146,11 +157,13 @@ Author URL: http://w3layouts.com
           </div>
         </div>
         <div class="contact-right">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+          <form id="submit-form" action="" class="signin-form">
             <div class="input-grids">
               <input type="text" name="w3lName" id="w3lName" placeholder="Your Name*" class="contact-input"
                 required="" />
-              <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email*" class="contact-input"
+              <input type="email" name="Sender Mail" id="w3lSender" placeholder="Your Email*" class="contact-input"
+                required="" />
+              <input type="number" name="Sender Mob" id="w3lSender" placeholder="Your Mobile*" class="contact-input"
                 required="" />
               <input type="text" name="w3lSubect" id="w3lSubect" placeholder="Subject*" class="contact-input"
                 required="" />
@@ -296,7 +309,75 @@ Author URL: http://w3layouts.com
   </script>
   <!--//MENU-JS-->
   <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    // $("#submit-form").submit((e) => {
+    //   e.preventDefault()
+    //   $.ajax({
+    //     url: "https://script.google.com/macros/s/AKfycbxaRM5g2M69LV-tFPtEdA5j4nN2evtclgYaSZRnwuNWDJJ7A6rDEpTrxbz8HE7H3RQF/exec",
+    //     data: $("#submit-form").serialize(),
+    //     method: "post",
+    //     success: function (response) {
+    //       alert("Form submitted successfully")
+    //       // window.location.reload()
+    //       window.location.href = "https://google.com"
+    //     },
+    //     error: function (err) {
+    //       alert("Something Error")
 
+    //     }
+    //   })
+    // })
+    $("#submit-form").submit(async (e) => {
+      e.preventDefault()
+      var xhrobj = new XMLHttpRequest();
+      xhrobj.open("POST", 'https://script.google.com/macros/s/AKfycbxaRM5g2M69LV-tFPtEdA5j4nN2evtclgYaSZRnwuNWDJJ7A6rDEpTrxbz8HE7H3RQF/exec', true);
+      xhrobj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      await xhrobj.send($("#submit-form").serialize());
+      xhrobj.onreadystatechange = function () {
+        if (this.status == 200) {
+          // document.getElementById("response").innerHTML = xhrobj.responseText;
+          window.location.href = "contact.html"
+          // console.log(this)
+          alert("Form Submitted Successfully")
+        }
+      }
+    });
+
+
+
+  </script>
+
+  <ul id="users"></ul>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { collection } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCBBK7ijIdEy-ctooLIxjW5SLweTqCKqZI",
+      authDomain: "emtax-web.firebaseapp.com",
+      projectId: "emtax-web",
+      storageBucket: "emtax-web.appspot.com",
+      messagingSenderId: "696238823047",
+      appId: "1:696238823047:web:9ca2adc50a8cac256d8a22",
+      measurementId: "G-8M38J2ZTZG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+
+
+
+  </script>
 </body>
 
 </html>

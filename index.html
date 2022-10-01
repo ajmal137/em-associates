@@ -50,9 +50,14 @@ Author URL: http://w3layouts.com
               <a class="nav-link" href="services.html">Services</a>
             </li>
 
-            <li class="nav-item mr-lg-5">
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item mr-lg-5 d-flex align-items-center">
+              <button type="button" class="btn btn-info btn-round" data-toggle="modal"
+                data-target="#loginModal">Login</button>
+            </li>
+
             <!--//search-right-->
             <div class="search-right ml-xl-5 mr-xl-0 mr-lg-3 ">
               <!--/search-form-->
@@ -67,8 +72,12 @@ Author URL: http://w3layouts.com
               <!--//search-form-->
             </div>
             <!--/search-right-->
+
           </ul>
         </div>
+
+
+
         <!-- toggle switch for light and dark theme -->
         <div class="mobile-position">
           <nav class="navigation">
@@ -89,6 +98,59 @@ Author URL: http://w3layouts.com
   </header>
   <!-- //header -->
   <!-- banner-section -->
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-title text-center">
+            <h4>Login</h4>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <form id="login-submit">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email1" placeholder="User Name...">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password1" placeholder="Password...">
+              </div>
+              <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+            </form>
+
+
+            <!-- <div class="text-center text-muted delimiter">or use a social network</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
+                title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
+                title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top"
+                title="Linkedin">
+                <i class="fab fa-linkedin"></i>
+              </button>
+              </di>
+            </div> -->
+          </div>
+        </div>
+        <!-- <div class="modal-footer d-flex justify-content-center">
+          <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
   <section id="home" class="w3l-banner py-5">
     <div class="container">
       <div class="align-items-center">
@@ -102,7 +164,6 @@ Author URL: http://w3layouts.com
           <p class="mt-0 pr-lg-5"> strategies for dealing with tax and prepare for their</p>
           <p class="mt-0 pr-lg-5">future in the financial market.</p>
           <div class="mt-sm-5 mt-4">
-            <a class="btn btn-primary btn-style" href="contact.html"> Let's Client Together </a>
             <a class="btn btn-primary btn-style" href="contact.html"> Let's Work Together </a>
           </div>
         </div>
@@ -117,12 +178,10 @@ Author URL: http://w3layouts.com
         <div class="row mx-auto text-center">
           <div class="col-lg-12 mt-lg-0 mt-5 text-left">
             <h5 class="title-subhny mb-2">About Us</h5>
-            <h3 class="title-w3l"><span>We are Professional Accountans & Auditors who loves perfection in things and
-                crafts beautiful </span> report with ease.</h3>
-            <p class="mt-4">I am 29 years old front-end developer from Nowy Sacz in Poland - in the busienss since 2004!
-
-              Through my 5 years of my career I have been working for over 500 clients from all over the World. My
-              speciality is webdesign and Angular development. I guarentee great communication and quick turnaround.</p>
+            <h3 class="title-w3l"><span>We are Professional Accountans, Auditors & Advisors who loves
+              </span> perfection.</h3>
+            <p class="mt-4">Accountant responsibilities include auditing financial documents and procedures, reconciling
+              bank statements and calculating tax payments and returns.</p>
             <div class="about-pic-grids row no-gutters mt-5">
               <div class="col-md-3 position-relative person-img">
                 <img src="assets/images/me.jpg" alt="" class="radius-image img-fluid">
@@ -202,15 +261,15 @@ Author URL: http://w3layouts.com
   </section>
   <!-- //w3l-index2-->
   <!--/w3l-education-->
-  <section class="w3lhny-timeline py-5" id="education">
+  <!-- <section class="w3lhny-timeline py-5" id="education">
     <div class="container py-lg-5 py-md-3 py-2">
       <div class="title-content text-center">
         <h6 class="title-subhny">Experts in field</h6>
         <h3 class="title-w3l mb-sm-5 mb-4 pb-lg-2"> <span>
-            My
+            Our
           </span>
-          Job & Education</h3>
-      </div>
+          Qualities</h3>
+        <!-- </div>
       <div class="w3l-educatiob-job-info mt-lg-5 mt-3 pt-lg-2">
         <ul class="m-timeline">
           <li>
@@ -267,23 +326,23 @@ Author URL: http://w3layouts.com
             </p>
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
+      </div> -->
+  </div>
+  </section> -->
   <!--//w3l-education-->
   <!--/w3-grids-3-->
   <section class="w3l-bottom-grids-6 py-5" id="services">
     <div class="container py-lg-5 py-md-4 py-2">
       <h5 class="title-subhny mb-2">Our Services</h5>
-      <h3 class="title-w3l"><span>What I </span>Do</h3>
+      <h3 class="title-w3l"><span>What We </span>Do</h3>
       <div class="grids-area-hny main-cont-wthree-fea row pt-3 mt-5">
         <div class="col-lg-4 col-md-6 grids-feature">
           <div class="area-box">
             <div class="area-icon icon-red">
               <span class="fa fa-paint-brush"></span>
             </div>
-            <h4><a href="#feature" class="title-head">Accounting</a></h4>
-            <p>Producing accurate financial records and maintaining efficient recordkeeping practices. </p>
+            <h4><a href="#feature" class="title-head">Incorporation</a></h4>
+            <p>Incorporation is the formation of a new business or nonprofit organization. </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
@@ -291,8 +350,10 @@ Author URL: http://w3layouts.com
             <div class="area-icon icon-green">
               <span class="fa fa-podcast"></span>
             </div>
-            <h4><a href="#feature" class="title-head">Brand Building</a></h4>
-            <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi sit amet. </p>
+            <h4><a href="#feature" class="title-head">Statutory Returns</a></h4>
+            <p>GST Return filing,
+              Income Tax filing,
+              TDS, TCS, Etc., </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
@@ -300,8 +361,8 @@ Author URL: http://w3layouts.com
             <div class="area-icon icon-blue">
               <span class="fa fa-laptop"></span>
             </div>
-            <h4><a href="#feature" class="title-head">App Dev</a></h4>
-            <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi sit amet. </p>
+            <h4><a href="#feature" class="title-head">Auditing</a></h4>
+            <p>Internal Audit and Statutory Audit. </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 grids-feature mt-5">
@@ -309,7 +370,7 @@ Author URL: http://w3layouts.com
             <div class="area-icon icon-yellow">
               <span class="fa fa-paint-brush"></span>
             </div>
-            <h4><a href="#feature" class="title-head">Clean Code</a></h4>
+            <h4><a href="#feature" class="title-head">MCA Services</a></h4>
             <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi sit amet. </p>
           </div>
         </div>
@@ -318,7 +379,7 @@ Author URL: http://w3layouts.com
             <div class="area-icon icon-purple">
               <span class="fa fa-podcast"></span>
             </div>
-            <h4><a href="#feature" class="title-head">Mobile apps</a></h4>
+            <h4><a href="#feature" class="title-head">Export/Import</a></h4>
             <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi sit amet. </p>
           </div>
         </div>
@@ -327,7 +388,7 @@ Author URL: http://w3layouts.com
             <div class="area-icon icon-orange">
               <span class="fa fa-laptop"></span>
             </div>
-            <h4><a href="#feature" class="title-head">Retina Ready</a></h4>
+            <h4><a href="#feature" class="title-head">Branding</a></h4>
             <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi sit amet. </p>
           </div>
         </div>
@@ -339,11 +400,11 @@ Author URL: http://w3layouts.com
   <div class="gallery section-agile py-5">
     <div class="container-fluid py-lg-5 py-md-4 px-lg-0 mx-lg-0">
       <div class="title-content text-center">
-        <h6 class="title-subhny">My Projects</h6>
+        <h6 class="title-subhny">Photo Gallery</h6>
         <h3 class="title-w3l mb-sm-5 mb-4 pb-lg-2"> <span>
-            My
+
           </span>
-          Projects</h3>
+          Images</h3>
       </div>
       <div class="row gallery_grids no-gutters">
         <div class="col-lg-4 col-6 gallery-img-grid gallery_grid1 hover14 column">
@@ -412,9 +473,9 @@ Author URL: http://w3layouts.com
           <div class="title-content text-left">
             <h6 class="title-subhny">Testimonials</h6>
             <h3 class="title-w3l mb-sm-5 mb-4 pb-lg-2">
-              <span> What my clients think
+              <span> What our clients think
               </span>
-              about Me
+              about Us
             </h3>
           </div>
           <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-4">
@@ -422,10 +483,9 @@ Author URL: http://w3layouts.com
               <div class="testimonial-content">
                 <div class="testimonial">
                   <blockquote>
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                      laudantium
-                      voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                      Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success .</q>
+                    <q>Excellent Service and very timely, I would recommend to using Em Associates
+                      to any one who needs assistance to do their taxes, Domestic or overseas ,
+                      you will not be disappointed .</q>
                   </blockquote>
                   <div class="testi-des">
                     <div class="test-img"><img src="assets/images/c1.jpg" class="img-fluid" alt="client-img">
@@ -442,10 +502,8 @@ Author URL: http://w3layouts.com
               <div class="testimonial-content">
                 <div class="testimonial">
                   <blockquote>
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                      laudantium
-                      voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                      Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                    <q>Em Associates was great!!! They provided fast knowledgeable service at a
+                      reasonable rate. It was a comfort to feel like you are a priority.</q>
                   </blockquote>
                   <div class="testi-des">
                     <div class="test-img"><img src="assets/images/c2.jpg" class="img-fluid" alt="client-img">
@@ -462,10 +520,8 @@ Author URL: http://w3layouts.com
               <div class="testimonial-content">
                 <div class="testimonial">
                   <blockquote>
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                      laudantium
-                      voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                      Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                    <q>They are very professionals and followed up on any questions in a timely matter.
+                      I highly recommend them as a top notch tax professionals.</q>
                   </blockquote>
                   <div class="testi-des">
                     <div class="test-img"><img src="assets/images/c3.jpg" class="img-fluid" alt="client-img">
@@ -482,10 +538,7 @@ Author URL: http://w3layouts.com
               <div class="testimonial-content">
                 <div class="testimonial">
                   <blockquote>
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                      laudantium
-                      voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                      Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
+                    <q>Excellent Services.</q>
                   </blockquote>
                   <div class="testi-des">
                     <div class="test-img"><img src="assets/images/c2.jpg" class="img-fluid" alt="client-img">
@@ -501,7 +554,7 @@ Author URL: http://w3layouts.com
           </div>
         </div>
         <div class="col-lg-6 position-relative pl-lg-5 mt-lg-0 mt-5">
-          <img src="assets/images/person.jpg" alt="" class="radius-image img-fluid">
+          <img src="assets/images/banner1.jpg" alt="" class="radius-image img-fluid">
         </div>
       </div>
     </div>
@@ -510,7 +563,7 @@ Author URL: http://w3layouts.com
   <!-- Footers-14 -->
   <footer class="w3l-footers-14 py-5">
     <div class="container py-md-5 py-sm-3">
-      <div class="row w3l-footer-top-form no-gutters">
+      <!-- <div class="row w3l-footer-top-form no-gutters">
         <div class="col-lg-7 grid-two-column">
           <div class="footer-image">
             <img src="assets/images/banner1.jpg" class="img-fluid radius-image">
@@ -528,7 +581,7 @@ Author URL: http://w3layouts.com
             <button type="submit" class="btn btn-primary btn-style submitbtn mt-3">Subscribe Now</button>
           </form>
         </div>
-      </div>
+      </div> -->
       <div class="row footers14-top no-gutters">
         <div class="col-lg-6 footer14-nav-left">
           <ul class="footer14-nav">
@@ -662,9 +715,42 @@ Author URL: http://w3layouts.com
         }
       });
     });
+    $("#submit-form").submit(async (e) => {
+      e.preventDefault()
+      var xhrobj = new XMLHttpRequest();
+      xhrobj.open("POST", 'https://script.google.com/macros/s/AKfycbxaRM5g2M69LV-tFPtEdA5j4nN2evtclgYaSZRnwuNWDJJ7A6rDEpTrxbz8HE7H3RQF/exec', true);
+      xhrobj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      await xhrobj.send($("#submit-form").serialize());
+      xhrobj.onreadystatechange = function () {
+        if (this.status == 200) {
+          // document.getElementById("response").innerHTML = xhrobj.responseText;
+          window.location.href = "contact.html"
+          // console.log(this)
+          alert("Form Submitted Successfully")
+        }
+      }
+    });
+    $("#login-submit").submit(async (e) => {
+      e.preventDefault()
+      var xhrobj = new XMLHttpRequest();
+      xhrobj.open("POST", '");
+      xhrobj.send($("#login-submit").serialize());
+      xhrobj.onreadystatechange = function () {
+        if (#password1 == 123) {
+          // document.getElementById("response").innerHTML = xhrobj.responseText;
+          window.location.href = "index.html"
+          // console.log(this)
+        }
+        else {
+          alert("Wrong Password")
+        }
+      }
+    });
   </script>
   <!--//MENU-JS-->
   <script src="assets/js/bootstrap.min.js"></script>
+
+
 
 </body>
 
